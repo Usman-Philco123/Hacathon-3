@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Dynamic Resume Builder-->
+     
+     <h1>Dynamic Resume Builder By Usman Asif</h1>
+
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            
+          <label for="username">Resume URL: </label>
+          <input type="text" id="username" name="username" required/>
+          <br/>
+
+            <label for="name">First Name: </label>
+            <Input type="name" id="name" name="name" required> <br>
+        
+            <label for="name">Last Name: </label>
+            <Input type="name" id="name" name="name" required> <br>
+
+            <label for="email">E-mail Address: </label>
+            <Input type="email" id="email" name="email" required> <br>
+
+            <label for="phone">Mobile Number: </label>
+            <Input type="number" id="phone" name="phone" required>   
+
+                <label for="address">Address: </label>
+                <Input type="add" id="add" name="add" required> 
+
+<!-- Profile Picture -->
+
+   <label for="profilePicture">Profile Picture</label>
+   <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="education" id="education" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea name="experience" id="experience" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>
+    </form>
+     
+    <div id="resumeOutput"> 
+        <!-- Resume will be generated below -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
